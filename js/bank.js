@@ -17,6 +17,23 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 
 
 
+  ////////////////////////// Total Balance ////////////////////////////
+
+  const totalDisplayBalance = document.getElementById('total-balance');
+  const totalBalanceString = totalDisplayBalance.innerText;
+  const totalBalance = parseFloat(totalBalanceString);
+
+
+  // Calculate //
+
+  const currentTotalBanance = totalBalance + parseFloat(newDepositAmmount);
+  
+  totalDisplayBalance.innerText = currentTotalBanance;
+
+ 
+
+
+
 
 
 
