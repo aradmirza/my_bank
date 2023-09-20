@@ -1,5 +1,5 @@
 
-document.getElementById('deposit-btn').addEventListener('click', function arad (){
+document.getElementById('deposit-btn').addEventListener('click', function(){
 
   const depositAmmount = document.getElementById('ammount-deposit');
   const newDepositAmmount = depositAmmount.value;
