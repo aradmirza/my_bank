@@ -1,5 +1,5 @@
 
-document.getElementById('deposit-btn').addEventListener('click', function(){
+document.getElementById('deposit-btn').addEventListener('click', function arad (){
 
   const depositAmmount = document.getElementById('ammount-deposit');
   const newDepositAmmount = depositAmmount.value;
@@ -11,7 +11,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 
   const currentDeposit = parseFloat(newDepositAmmount) + parseFloat(previousTotal);
 
-  const fixed2 = currentDeposit.toFixed(2);
+  const fixed2 = currentDeposit.toFixed(0);
 
   displayDeposit.innerText = fixed2;
 
@@ -27,8 +27,10 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
   // Calculate //
 
   const currentTotalBanance = totalBalance + parseFloat(newDepositAmmount);
+
+  const fixed3 = currentTotalBanance.toFixed(0);
   
-  totalDisplayBalance.innerText = currentTotalBanance;
+  totalDisplayBalance.innerText = fixed3;
 
  
 
