@@ -31,17 +31,18 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
   const loanDisplayString = loanDisplay.innerText;
   const loanDisplayAmmount = parseFloat(loanDisplayString);
 
-  // for(let i = -n; i < -0; i--){
-  //   let vo = i;
-  // }
 
-  // if(totalBalanceAddition < 0){
-  //   totalBalanceArea.innerText = 0;
-  // }
-  // else if(totalBalanceAddition <= i){
-  //   loanDisplay.innerText = totalBalanceAddition;
-  // }
 
+  if(totalBalanceAddition < 0){
+    totalBalanceArea.innerText = 0;
+
+      if(totalBalanceAddition < -0){
+      loanDisplay.innerText = totalBalanceAddition;
+    }
+  }
+  
+
+  
 
 
 
