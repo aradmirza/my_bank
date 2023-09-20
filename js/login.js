@@ -12,7 +12,7 @@ document.getElementById('submit-btn').addEventListener('click', function(){
 
   
 
-  if(email === "arad" && password === "fatemaa"){
+  if(email === "arad2" && password === "gogo"){
 
     location.href = "development/bank.html";
 
